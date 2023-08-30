@@ -7,3 +7,58 @@ body {
 }
 
 /* LANDING PAGE */
+
+body {
+  background-image: url("./images/alexander-grey-62vi3TG5EDg-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+/* MAIN */
+
+main {
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-container {
+    border-radius: 50%;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
+    height: 280px;
+    width: 280px;
+    background-image: url(./images/IMG_7842\ 2.JPG);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.photo-container:hover {
+    animation: spinning 2s linear infinite;
+}
+
+@keyframes spinning {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* FOOTER */
+
+footer {
+  height: 5vh;
+  padding: 2rem;
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
