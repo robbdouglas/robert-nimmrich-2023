@@ -294,7 +294,7 @@ nav ul li a:hover::after {
 }
 
 .work:hover img {
-  transform: scale(1.1);
+  transform: scale(1.3);
 }
 
 .work:hover .layer {
