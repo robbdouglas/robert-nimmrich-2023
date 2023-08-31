@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
     <!-- FAVICON -->
-    <link rel="icon" type="image/png" href="./icons/icons8-hand-peace-50.png" />
+    <link rel="icon" type="image/png" href="./icons/icons8-r-67.png" />
     <!-- FONTAWESOME -->
     <link
       rel="stylesheet"
@@ -43,9 +43,82 @@
         <!-- TEXT IN HEADER -->
         <div class="header-text">
           <p>Nice to e-meet you!</p>
-          <h1>Hello there! I'm <span>Robert</span> <br> Nimmrich from Berlin, Germany!</h1>
+          <h1>
+            Hello there! I'm <span>Robert</span> <br />
+            Nimmrich from Berlin, Germany!
+          </h1>
         </div>
       </div>
     </header>
+    <!-- ABOUT -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./images/robb_dsds.jpeg" alt="user" />
+          </div>
+          <div class="about-col-2">
+            <h2 class="subtitle">About Me</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius odit
+              aliquid libero nesciunt sequi at, earum necessitatibus pariatur
+              quas, ipsa quisquam fugit harum quibusdam voluptatem, tempora
+              error itaque veniam ratione? Aliquam dolore fuga nemo accusantium
+              asperiores voluptates libero ullam rerum, pariatur cumque officia
+              nulla quia vitae recusandae.
+            </p>
+            <div class="tab-titles">
+              <h3 class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </h3>
+              <h3 class="tab-links" onclick="opentab('experience')">
+                Experience
+              </h3>
+              <h3 class="tab-links" onclick="opentab('education')">
+                Education
+              </h3>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App Interfaces</li>
+                <li><span>Web Development</span><br />Web App Interfaces</li>
+                <li>
+                  <span>App Development</span><br />Building Apps for Mobile
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2022</span><br />jojojo</li>
+                <li><span>2023</span><br />diesdas</li>
+                <li><span>until now</span><br />ananas</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>Grundschule</span><br />Jakob Schule Eisenach</li>
+                <li><span>Gymnasium</span><br />Ernst-Abbe-Gymnasium</li>
+                <li><span>Universität</span><br />FSU Jena</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
   </body>
 </html>
