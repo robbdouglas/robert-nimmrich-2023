@@ -420,7 +420,6 @@ nav .fa-solid {
   /* HEADER */
   #header {
     background-position: center;
-    background-attachment: scroll;
   }
   .header-text {
     margin-top: 100%;
@@ -479,5 +478,12 @@ nav .fa-solid {
   }
   .copyright {
     font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 854px) and (-webkit-min-device-pixel-ratio: 2),
+  (max-width: 854px) and (min-resolution: 192dpi) {
+  #header {
+    background-attachment: scroll;
   }
 }
