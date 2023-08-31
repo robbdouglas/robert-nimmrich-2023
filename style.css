@@ -307,6 +307,7 @@ nav ul li a:hover::after {
   text-decoration: none;
   color: #fff;
   transition: background 0.5s;
+  font-size: 1.8rem;
 }
 
 .btn:hover {
@@ -323,8 +324,11 @@ nav ul li a:hover::after {
   flex-basis: 60%;
 }
 
-.contact-left p {
+.contact-left a {
   margin-top: 30px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.8rem;
 }
 
 .contact-left p i {
@@ -354,6 +358,7 @@ nav ul li a:hover::after {
 .btn.btn2 {
   display: inline-block;
   background: #ff004f;
+  font-size: 1.8rem;
 }
 
 .contact-right form {
@@ -384,9 +389,10 @@ form .btn2 {
   width: 100%;
   text-align: center;
   padding: 25px 0;
-  background: #262626;
+  background: rgba(38, 38, 38, 0.5);
   font-weight: 300;
   margin-top: 20px;
+  font-size: 2.4rem;
 }
 
 #msg {
