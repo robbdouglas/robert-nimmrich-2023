@@ -420,6 +420,7 @@ nav .fa-solid {
   /* HEADER */
   #header {
     background-position: center;
+    background-attachment: scroll;
   }
   .header-text {
     margin-top: 100%;
