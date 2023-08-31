@@ -117,6 +117,14 @@ nav ul li a:hover::after {
   font-size: 2.8rem;
 }
 
+.red {
+  color: #ff004f;
+}
+
+.green {
+  color: #61b752;
+}
+
 .subtitle {
   font-size: 6rem;
   font-weight: 600;
@@ -394,7 +402,7 @@ nav .fa-solid {
   display: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 854px) {
   /* HEADER */
   #header {
     /* background-image: url(./images/robb-linkedin.png); */

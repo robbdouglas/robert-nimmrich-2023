@@ -62,12 +62,11 @@
           <div class="about-col-2">
             <h2 class="subtitle">About Me</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius odit
-              aliquid libero nesciunt sequi at, earum necessitatibus pariatur
-              quas, ipsa quisquam fugit harum quibusdam voluptatem, tempora
-              error itaque veniam ratione? Aliquam dolore fuga nemo accusantium
-              asperiores voluptates libero ullam rerum, pariatur cumque officia
-              nulla quia vitae recusandae.
+              Hi! My Name is <span class="red">Robert Nimmrich</span> - but
+              don't hesitate to call me <span class="red">Robb</span>! I'm 29
+              years old and I'm living in Berlin, the most exciting and colorful
+              city in Germany. Originally I stem from Thuringia, which is also
+              known as "The <span class="green">Green</span> Heart of Germany".
             </p>
             <div class="tab-titles">
               <h3 class="tab-links active-link" onclick="opentab('skills')">
@@ -280,11 +279,11 @@
         e.preventDefault();
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
-            msg.innerHTML = "Message sent successfully!"
+            msg.innerHTML = "Message sent successfully!";
             setTimeout(function () {
               msg.innerHTML = "";
-            }, 5000)
-            form.reset()
+            }, 5000);
+            form.reset();
           })
           .catch((error) => console.error("Error!", error.message));
       });
