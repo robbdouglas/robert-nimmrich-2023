@@ -131,6 +131,10 @@ nav ul li a:hover::after {
   color: #fff;
 }
 
+.subtitle.about-subtitle {
+  margin-top: 0;
+}
+
 .tab-titles {
   display: flex;
   margin: 20px 0 40px;
@@ -316,6 +320,10 @@ nav ul li a:hover::after {
 
 /* CONTACT */
 
+.subtitle.contact-subtitle {
+  margin-top: 0;
+}
+
 .contact-left {
   flex-basis: 35%;
 }
@@ -411,7 +419,7 @@ nav .fa-solid {
 @media only screen and (max-width: 854px) {
   /* HEADER */
   #header {
-    /* background-image: url(./images/robb-linkedin.png); */
+    background-position: center;
   }
   .header-text {
     margin-top: 100%;
