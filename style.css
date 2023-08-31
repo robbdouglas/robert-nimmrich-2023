@@ -23,6 +23,7 @@ body {
   background-image: url(./images/robb-linkedin.png);
   background-size: contain;
   background-position: right;
+  background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
@@ -113,6 +114,7 @@ nav ul li a:hover::after {
 
 .about-col-2 {
   flex-basis: 60%;
+  font-size: 2.8rem;
 }
 
 .subtitle {
@@ -128,7 +130,7 @@ nav ul li a:hover::after {
 
 .tab-links {
   margin-right: 50px;
-  font-size: 1.8rem;
+  font-size: 2.8rem;
   font-weight: 500;
   cursor: pointer;
   position: relative;
@@ -350,7 +352,8 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
-form input, form textarea {
+form input,
+form textarea {
   width: 100%;
   border: 0;
   outline: none;
@@ -376,4 +379,82 @@ form .btn2 {
   background: #262626;
   font-weight: 300;
   margin-top: 20px;
+}
+
+#msg {
+  color: #61b752;
+  margin-top: -20px;
+  display: block;
+  font-size: 2.5rem;
+}
+
+/* RESPONSIVE DESIGN */
+
+nav .fa-solid {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  /* HEADER */
+  #header {
+    /* background-image: url(./images/robb-linkedin.png); */
+  }
+  .header-text {
+    margin-top: 100%;
+    font-size: 1.6rem;
+  }
+  .header-text h1 {
+    font-size: 3rem;
+  }
+  nav .fa-solid {
+    display: block;
+    font-size: 2.5rem;
+  }
+  nav ul {
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+  nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  /* ABOUT ME */
+  .subtitle {
+    font-size: 4rem;
+  }
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 100%;
+  }
+  .about-col-1 {
+    margin-bottom: 30px;
+  }
+  .about-col-2 {
+    font-size: 1.4rem;
+  }
+  .tab-links {
+    font-size: 1.6rem;
+    margin-right: 20px;
+  }
+  /* CONTACT */
+  .contact-left,
+  .contact-right {
+    flex-basis: 100%;
+  }
+  .copyright {
+    font-size: 1.4rem;
+  }
 }
