@@ -79,6 +79,7 @@ nav ul li a:hover::after {
 .header-text {
   margin-top: 20%;
   font-size: 3rem;
+  display: inline-block;
 }
 
 .header-text h1 {
@@ -123,6 +124,16 @@ nav ul li a:hover::after {
 
 .green {
   color: #61b752;
+}
+
+.dci {
+  text-decoration: none;
+  color: #0064FF;
+}
+
+.dci:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .subtitle {
@@ -173,7 +184,7 @@ nav ul li a:hover::after {
 }
 
 .tab-contents ul li span {
-  color: #b54769;
+  color: #ff004f;
   font-size: 1.4rem;
 }
 
