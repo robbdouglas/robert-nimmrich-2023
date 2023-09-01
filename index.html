@@ -22,6 +22,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- TITLE -->
     <title>Robert Nimmrich</title>
   </head>
@@ -30,8 +32,14 @@
     <header id="header">
       <!-- NAVBAR -->
       <div class="container">
-        <nav>
-          <img class="logo" src="./images/robert-logo2.png" alt="logo" />
+        <nav data-aos="fade-in" data-aos-duration="1500">
+          <img
+            class="logo"
+            data-aos="fade-in"
+            data-aos-duration="1500"
+            src="./images/robert-logo2.png"
+            alt="logo"
+          />
           <ul id="sidemenu">
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -43,23 +51,35 @@
           <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <!-- TEXT IN HEADER -->
-        <div class="header-text">
+        <div data-aos="fade-in" data-aos-duration="1500" class="header-text">
           <p>Nice to e-meet you!</p>
           <h1>
-            Hello there! I'm <span>Robert <br />
-            Nimmrich</span> from Berlin, Germany!
+            Hello there! I'm
+            <span
+              >Robert <br />
+              Nimmrich</span
+            >
+            from Berlin, Germany!
           </h1>
         </div>
       </div>
     </header>
     <!-- ABOUT -->
-    <div id="about">
+    <div data-aos="fade-up" data-aos-duration="1500" id="about">
       <div class="container">
         <div class="row">
-          <div class="about-col-1">
+          <div
+            class="about-col-1"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
             <img src="./images/robb_dsds.jpeg" alt="user" />
           </div>
-          <div class="about-col-2">
+          <div
+            class="about-col-2"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
             <h2 class="subtitle about-subtitle">About Me</h2>
             <p>
               Hi! My Name is <span class="red">Robert Nimmrich</span> - but
@@ -83,9 +103,7 @@
               <ul>
                 <li><span>UI/UX</span><br />blablabla</li>
                 <li><span>Web Development</span><br />blablabla</li>
-                <li>
-                  <span>App Development</span><br />blablabla
-                </li>
+                <li><span>App Development</span><br />blablabla</li>
               </ul>
             </div>
             <div class="tab-contents" id="experience">
@@ -107,7 +125,7 @@
       </div>
     </div>
     <!-- SERVICES -->
-    <div id="services">
+    <div id="services" data-aos="fade-up" data-aos-duration="1500">
       <div class="container">
         <h2 class="subtitle">My Services</h2>
         <div class="services-list">
@@ -142,11 +160,11 @@
       </div>
     </div>
     <!-- PROJECTS -->
-    <div id="projects">
+    <div id="projects" data-aos="fade-up" data-aos-duration="1500">
       <div class="container">
         <h2 class="subtitle">My Projects</h2>
         <div class="work-list">
-          <div class="work">
+          <div class="work" data-aos="fade-right" data-aos-duration="1500">
             <img src="./images/work-1.png" alt="work" />
             <div class="layer">
               <h3>Social Media App</h3>
@@ -159,7 +177,7 @@
               ></a>
             </div>
           </div>
-          <div class="work">
+          <div class="work" data-aos="fade-down" data-aos-duration="1500">
             <img src="./images/work-2.png" alt="work" />
             <div class="layer">
               <h3>Social Media App</h3>
@@ -172,7 +190,7 @@
               ></a>
             </div>
           </div>
-          <div class="work">
+          <div class="work" data-aos="fade-left" data-aos-duration="1500">
             <img src="./images/work-3.png" alt="work" />
             <div class="layer">
               <h3>Social Media App</h3>
@@ -190,10 +208,10 @@
       </div>
     </div>
     <!-- CONTACT -->
-    <div id="contact">
+    <div id="contact" data-aos="fade-up" data-aos-duration="1500">
       <div class="container">
         <div class="row">
-          <div class="contact-left">
+          <div class="contact-left"  data-aos="fade-right" data-aos-duration="1500">
             <h2 class="subtitle contact-subtitle">Contact Me</h2>
             <p>
               <a href="mailto:robert.nimmrich@icloud.com"
@@ -216,7 +234,7 @@
               >Download CV</a
             >
           </div>
-          <div class="contact-right">
+          <div class="contact-right"  data-aos="fade-left" data-aos-duration="1500">
             <!-- FORM -->
             <form name="submit-to-google-sheet">
               <input
@@ -242,9 +260,10 @@
           </div>
         </div>
       </div>
-      <div class="copyright">
+      <!-- FOOTER -->
+      <footer class="copyright">
         <p>Copyright &copy Robert Nimmrich 2023</p>
-      </div>
+      </footer>
     </div>
 
     <!-- ABOUT ME TAB FUNCTION -->
@@ -296,6 +315,10 @@
           })
           .catch((error) => console.error("Error!", error.message));
       });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
