@@ -325,6 +325,10 @@ nav ul li a:hover::after {
   height: 100%;
 }
 
+.progress {
+  color: orange;
+}
+
 .btn {
   display: block;
   margin: 50px auto;
