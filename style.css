@@ -496,6 +496,8 @@ nav .fa-solid {
   }
 }
 
+/* IOS BACKGROUND ATTACKMENT FIX */
+
 @media only screen and (max-width: 854px) and (-webkit-min-device-pixel-ratio: 2),
   (max-width: 854px) and (min-resolution: 192dpi) {
   #header {
