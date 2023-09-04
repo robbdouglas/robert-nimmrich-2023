@@ -433,6 +433,8 @@ form textarea {
   font-size: 2.5rem;
 }
 
+/* FOOTER */
+
 .copyright {
   width: 100%;
   text-align: center;
@@ -447,12 +449,16 @@ form textarea {
 
 .copyright p {
   grid-column: 1 / 2;
+  justify-self: left;
+  margin-left: 20px;
 }
 
 .copyright div {
   color: #fff;
   grid-column: 3 / 4;
   align-self: center;
+  justify-self: right;
+  margin-right: 20px;
 }
 
 .copyright a {
