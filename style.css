@@ -493,7 +493,7 @@ nav .fa-solid {
     font-size: 2.5rem;
   }
   nav ul {
-    background: #ff004f;
+    background: linear-gradient(rgba(0, 0, 0), #ff004f);
     position: fixed;
     top: 0;
     right: -300px;
