@@ -489,7 +489,7 @@ nav .fa-solid {
     margin-bottom: 30px;
   }
   .about-col-2 p{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
   .tab-links {
     font-size: 1.8rem;
@@ -511,6 +511,8 @@ nav .fa-solid {
     font-size: 1.4rem;
   }
 }
+
+/* PROJECT RESPONSIVENESS */
 
 @media only screen and (min-width: 855px) and (max-width: 1450px) {
   .layer h3 {
