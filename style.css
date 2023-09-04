@@ -115,7 +115,7 @@ nav ul li a:hover::after {
 
 .about-col-2 {
   flex-basis: 60%;
-  font-size: 2.8rem;
+  font-size: 2.4rem;
 }
 
 .red {
@@ -488,12 +488,19 @@ nav .fa-solid {
   .about-col-1 {
     margin-bottom: 30px;
   }
-  .about-col-2 {
-    font-size: 2rem;
+  .about-col-2 p{
+    font-size: 1.6rem;
   }
   .tab-links {
     font-size: 1.8rem;
     margin-right: 20px;
+  }
+  /* PROJECTS */
+  .layer h3 {
+    font-size: 1.6rem;
+  }
+  .layer p {
+    font-size: 1.4rem;
   }
   /* CONTACT */
   .contact-left,
@@ -502,6 +509,15 @@ nav .fa-solid {
   }
   .copyright {
     font-size: 1.4rem;
+  }
+}
+
+@media only screen and (min-width: 855px) and (max-width: 1450px) {
+  .layer h3 {
+    font-size: 1.4rem;
+  }
+  .layer p {
+    font-size: 1.2rem;
   }
 }
 
