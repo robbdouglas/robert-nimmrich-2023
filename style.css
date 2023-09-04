@@ -404,6 +404,10 @@ form .btn2 {
   cursor: pointer;
 }
 
+.btn2:hover {
+  transform: scale(1.1);
+}
+
 .copyright {
   width: 100%;
   text-align: center;
