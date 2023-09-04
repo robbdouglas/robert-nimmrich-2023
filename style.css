@@ -28,7 +28,7 @@ body {
 }
 
 .logo {
-  width: 14rem;
+  width: 20rem;
 }
 
 /* NAVBAR */
@@ -44,6 +44,10 @@ nav {
   flex-wrap: wrap;
 }
 
+nav ul {
+  margin-bottom: 50px;
+}
+
 nav ul li {
   display: inline-block;
   list-style: none;
@@ -53,7 +57,7 @@ nav ul li {
 nav ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 2rem;
   position: relative;
 }
 
@@ -520,6 +524,12 @@ nav .fa-solid {
   }
   .layer p {
     font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 855px) and (max-width: 984px) {
+  nav ul li a {
+    font-size: 1.3rem;
   }
 }
 
