@@ -282,12 +282,20 @@ nav ul li a:hover::after {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 2rem;
   transition: height 0.5s;
 }
 
 .layer h3 {
   font-weight: 500;
+  margin-bottom: 20px;
+  font-size: 2.8rem;
+}
+
+.layer p {
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 0 20%;
   margin-bottom: 20px;
 }
 
@@ -397,11 +405,12 @@ form textarea {
   border-radius: 6px;
 }
 
-form .btn2 {
+.btn2 {
   padding: 14px 60px;
   font-size: 1.8rem;
   margin-top: 20px;
   cursor: pointer;
+  transition: transform 0.5s;
 }
 
 .btn2:hover {
@@ -480,7 +489,7 @@ nav .fa-solid {
     margin-bottom: 30px;
   }
   .about-col-2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   .tab-links {
     font-size: 1.8rem;
