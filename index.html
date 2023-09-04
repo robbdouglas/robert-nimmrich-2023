@@ -370,6 +370,8 @@
       </footer>
     </div>
 
+    <!-- --------------------------SCRIPTS-------------------------- -->
+
     <!-- ABOUT ME TAB FUNCTION -->
 
     <script>
@@ -397,6 +399,19 @@
       function closemenu() {
         sidemenu.style.right = "-300px";
       }
+      // Fügen Sie diesen Code in Ihre bestehende JavaScript-Datei ein
+      document.addEventListener("DOMContentLoaded", function () {
+        // Holen Sie alle Links im Menü
+        var menuLinks = document.querySelectorAll("#sidemenu a");
+
+        // Fügen Sie einen Event Listener zu jedem Link hinzu
+        menuLinks.forEach(function (link) {
+          link.addEventListener("click", function () {
+            // Schließen Sie das Menü nach dem Klick
+            closemenu();
+          });
+        });
+      });
     </script>
 
     <!-- FORMS FUNCTION -->
