@@ -554,6 +554,15 @@ nav .fa-solid {
   }
 }
 
+@media only screen and (max-width: 389px) {
+  .layer h3 {
+    font-size: 1.2rem;
+  }
+  .layer p {
+    font-size: 1rem;
+  }
+}
+
 /* IOS BACKGROUND ATTACKMENT FIX */
 
 @media only screen and (max-width: 854px) and (-webkit-min-device-pixel-ratio: 2),
