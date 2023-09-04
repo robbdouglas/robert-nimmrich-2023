@@ -132,7 +132,7 @@ nav ul li a:hover::after {
 
 .dci {
   text-decoration: none;
-  color: #0064FF;
+  color: #0064ff;
 }
 
 .dci:hover {
@@ -421,6 +421,13 @@ form textarea {
   transform: scale(1.1);
 }
 
+#msg {
+  color: #61b752;
+  margin-top: -20px;
+  display: block;
+  font-size: 2.5rem;
+}
+
 .copyright {
   width: 100%;
   text-align: center;
@@ -429,13 +436,27 @@ form textarea {
   font-weight: 300;
   margin-top: 20px;
   font-size: 2.4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-#msg {
-  color: #61b752;
-  margin-top: -20px;
-  display: block;
-  font-size: 2.5rem;
+.copyright p {
+  grid-column: 2 / 3;
+}
+
+.copyright div {
+  color: #fff;
+  grid-column: 3 / 4;
+  align-self: center;
+}
+
+.copyright a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.copyright a:hover {
+  color: #ff004f;
 }
 
 /* RESPONSIVE DESIGN */
@@ -492,7 +513,7 @@ nav .fa-solid {
   .about-col-1 {
     margin-bottom: 30px;
   }
-  .about-col-2 p{
+  .about-col-2 p {
     font-size: 1.8rem;
   }
   .tab-links {
