@@ -414,6 +414,11 @@ form textarea {
   border-radius: 6px;
 }
 
+input[type="text"]:focus {
+  border: 2px solid #ff004f;
+  outline: none;
+}
+
 .btn2 {
   padding: 14px 60px;
   font-size: 1.8rem;
