@@ -419,6 +419,16 @@ input[type="text"]:focus {
   outline: none;
 }
 
+input[type="email"]:focus {
+  border: 2px solid #ff004f;
+  outline: none;
+}
+
+textarea:focus {
+  border: 2px solid #ff004f;
+  outline: none;
+}
+
 .btn2 {
   padding: 14px 60px;
   font-size: 1.8rem;
