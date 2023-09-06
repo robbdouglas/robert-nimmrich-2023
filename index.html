@@ -419,20 +419,40 @@
         "https://script.google.com/macros/s/AKfycbxS8q2x0gMUd2RRkIj5Mjwa79yqFQeN7IvjGYiQPbObW569tGOFTXFehRjIMyfw3IES/exec";
       const form = document.forms["submit-to-google-sheet"];
       const msg = document.getElementById("msg");
+      const submitBtn = form.querySelector("button[type=submit]");
 
       form.addEventListener("submit", (e) => {
         e.preventDefault();
+
+        // Deaktivieren Sie den Submit-Button und ändern Sie den Text
+        submitBtn.disabled = true;
+        submitBtn.innerText = "Submitting... Please wait...";
+
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
-            msg.innerHTML = "Message sent successfully!";
+            // Simulieren Sie eine Wartezeit von 5 Sekunden
             setTimeout(function () {
-              msg.innerHTML = "";
+              msg.innerHTML = "Message sent successfully!";
+              // Aktivieren Sie den Button und setzen Sie den Text zurück
+              submitBtn.disabled = false;
+              submitBtn.innerText = "Submit";
+              // Löschen Sie die Nachricht
+              setTimeout(function () {
+                msg.innerHTML = "";
+              }, 2000);
+              form.reset();
             }, 5000);
-            form.reset();
           })
-          .catch((error) => console.error("Error!", error.message));
+          .catch((error) => {
+            console.error("Error!", error.message);
+            // Aktivieren Sie den Button und setzen Sie den Text zurück
+            submitBtn.disabled = false;
+            submitBtn.innerText = "Submit";
+          });
       });
     </script>
+
+    <!-- AOS SCRIPT -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
