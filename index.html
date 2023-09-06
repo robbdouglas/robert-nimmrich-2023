@@ -425,19 +425,18 @@
       form.addEventListener("submit", (e) => {
         e.preventDefault();
 
-        // Deaktivieren Sie den Submit-Button und ändern Sie den Text
+        // disable button and change text
         submitBtn.disabled = true;
         submitBtn.innerText = "Submitting... Please wait...";
 
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
-            // Simulieren Sie eine Wartezeit von 5 Sekunden
             setTimeout(function () {
               msg.innerHTML = "Message sent successfully!";
-              // Aktivieren Sie den Button und setzen Sie den Text zurück
+              // reactivating the button
               submitBtn.disabled = false;
               submitBtn.innerText = "Submit";
-              // Löschen Sie die Nachricht
+              // reset form and message
               setTimeout(function () {
                 msg.innerHTML = "";
               }, 2000);
@@ -446,9 +445,6 @@
           })
           .catch((error) => {
             console.error("Error!", error.message);
-            // Aktivieren Sie den Button und setzen Sie den Text zurück
-            submitBtn.disabled = false;
-            submitBtn.innerText = "Submit";
           });
       });
     </script>
