@@ -131,9 +131,9 @@ nav ul li a:hover::after {
   color: #61b752;
 }
 
-.dci {
+p a {
+  color: #ababab;
   text-decoration: none;
-  color: #0064ff;
 }
 
 .dci:hover {
