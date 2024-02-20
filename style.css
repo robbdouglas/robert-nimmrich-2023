@@ -374,7 +374,8 @@ p a {
 }
 
 .social-icons {
-  margin-top: 30px;
+  width: 23em;
+  text-align: center;
 }
 
 .social-icons a {
