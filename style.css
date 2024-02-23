@@ -220,7 +220,12 @@ p a {
   font-size: 1.8rem;
   font-weight: 300;
   border-radius: 10px;
-  transition: background 0.5s, transform 0.5s;
+  transition: background 0.5s ease 0s, transform 0.5s;
+}
+
+.services-list div:hover {
+  background: #ff004f;
+  transform: translateY(-10px);
 }
 
 .services-list div i {
@@ -242,13 +247,8 @@ p a {
   display: inline-block;
 }
 
-.services-list div:hover {
-  background: #ff004f;
-  transform: translateY(-10px);
-}
-
 .looking-for-job {
-  color: #ff004f;
+  font-weight: bold;
 }
 
 /* PROJECTS */
