@@ -247,6 +247,10 @@ p a {
   transform: translateY(-10px);
 }
 
+.looking-for-job {
+  color: #ff004f;
+}
+
 /* PROJECTS */
 
 #projects {
