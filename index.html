@@ -411,6 +411,16 @@
           });
         });
       });
+
+      // Menü soll sich auch schließen, wenn neben das Sidemenü geklickt wird:
+      window.addEventListener("click", function (e) {
+        if (
+          e.target != sidemenu &&
+          e.target != document.querySelector(".fa-bars")
+        ) {
+          closemenu();
+        }
+      });
     </script>
 
     <!-- FORMS FUNCTION -->
