@@ -404,12 +404,15 @@
 
     <script>
       var sidemenu = document.getElementById("sidemenu");
+
       function openmenu() {
         sidemenu.style.right = "0";
       }
+
       function closemenu() {
         sidemenu.style.right = "-300px";
       }
+
       document.addEventListener("DOMContentLoaded", function () {
         var menuLinks = document.querySelectorAll("#sidemenu a");
 
@@ -421,10 +424,10 @@
       });
 
       // Menü soll sich auch schließen, wenn neben das Sidemenü geklickt wird:
-      window.addEventListener("click", function (e) {
+      document.addEventListener("touchstart", function (e) {
         if (
-          e.target != sidemenu &&
-          e.target != document.querySelector(".fa-bars")
+          !sidemenu.contains(e.target) &&
+          e.target !== document.querySelector(".fa-bars")
         ) {
           closemenu();
         }
